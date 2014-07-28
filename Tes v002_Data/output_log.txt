@@ -11,13 +11,7 @@ Platform assembly: E:\Games\Unity Games\Games\Test Invaders\Tes v002_Data\Manage
 Loading E:\Games\Unity Games\Games\Test Invaders\Tes v002_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: E:\Games\Unity Games\Games\Test Invaders\Tes v002_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading E:\Games\Unity Games\Games\Test Invaders\Tes v002_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.073 seconds
+- Completed reload, in  0.061 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-UnloadTime: 0.624089 ms
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 183.
-Total: 1.301167 ms (FindLiveObjects: 0.023097 ms CreateObjectMapping: 0.021738 ms MarkObjects: 0.234146 ms  DeleteObjects: 0.139944 ms)
-
