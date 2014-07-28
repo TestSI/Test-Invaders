@@ -1,17 +1,18 @@
 ﻿using UnityEngine;
 
-// Скрипт для запуску пуль.
-public class WeaponScript : MonoBehaviour
+// Скрипт для запуску пуль противників. Майже ідентичний до WeaponScript.
+public class WeaponEnemyScript : MonoBehaviour
 {
 	// Перетягуємо gameObject який відповідає за пулю в Unity editor. 
 	public Transform shotPrefab;
 	
 	// Час між пострілами.
-	public float shootingRate = 5;
+	public  static float shootingRate = 5;
+	public  float PlayerShootingRate = 0.5f;
 	public Vector3 newPos;
 	
 	private float shootCooldown;
-
+	
 	// Час між пострілами.
 	void Start()
 	{

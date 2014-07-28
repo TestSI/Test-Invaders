@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-// Скрипт відповідальний за spawn противників.
-public class SpawnEnemyScript : MonoBehaviour {
+// Скрипт відповідальний за spawn противників  'Enemy_1.1' в безкінечному режимі.
+public class SpawnEnemyScript1 : MonoBehaviour {
 	
 	public GameObject spawnObject;
-	public float spawnAreaWidth; // ширина на якій буде спавнитись ворог одини від одного.
-	public float spawnAreaHeight; // висота -//-.
-	public int numberOfEnemiesX; // Кількість противників в рядку.
-	public int numberOfEnemiesY; // Кількість противників в стовпці.
+	float spawnAreaWidth = 7; // ширина на якій буде спавнитись ворог одини від одного.
+	float spawnAreaHeight = 3; // висота -//-.
+	int numberOfEnemiesX = 1; // Кількість противників в рядку.
+	int numberOfEnemiesY = 1; // Кількість противників в стовпці.
 	public float speedIncreasePerLevel = 1.0f; // збільшення швидкості з кожним рівнем. Поки не використовується.
 	public float speed = 5;
 	int whoIsShooting = 0;
@@ -16,7 +16,6 @@ public class SpawnEnemyScript : MonoBehaviour {
 	
 	void Start ()
 	{
-		// Розміщуємо противників за заданими параетрами.
 		for(int i = 0; i < numberOfEnemiesX; i++)
 		{
 			for(int j = 0; j < numberOfEnemiesY; j++)
@@ -28,7 +27,10 @@ public class SpawnEnemyScript : MonoBehaviour {
 				newObject.transform.parent = transform;
 			}
 		}
-		// Відновлюєм деякі параметри після перезапуску, які були змінені під час гри.
+		spawnAreaWidth = Random.Range(6,10); 
+		spawnAreaHeight = Random.Range(2.5f,5);
+		numberOfEnemiesX = Random.Range(0,9);
+		numberOfEnemiesY = Random.Range(0,4);
 		MoveEnemy3Script.step = 0.1f;
 		MoveEnemy2Script.speed = 2;
 		MoveEnemy1Script.speed = 3.0f;
@@ -36,7 +38,6 @@ public class SpawnEnemyScript : MonoBehaviour {
 		InvokeRepeating("WhoIsShooting", 4.0f, 2);
 	}
 
-	// Вибір ворога, який буде стріляти.
 	int WhoIsShooting ()
 	{
 		whoIsShooting = Random.Range(0, transform.childCount);
@@ -79,9 +80,8 @@ public class SpawnEnemyScript : MonoBehaviour {
 
 		if(transform.childCount == 0)
 		{
-			if (Application.loadedLevelName == "Endless")
+			if (Application.loadedLevelName == "EndlessEnemy1")
 			{
-				speed += speedIncreasePerLevel;
 				Start();
 			}
 			else 
@@ -90,7 +90,6 @@ public class SpawnEnemyScript : MonoBehaviour {
 			}
 		}
 	}
-
 	void FixedUpdate ()
 	{
 		var i = transform.GetChild(whoIsShooting);

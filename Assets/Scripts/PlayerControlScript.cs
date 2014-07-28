@@ -11,7 +11,6 @@ public class PlayerControlScript : MonoBehaviour {
 	void start()
 	{
 		movement = Vector2.zero;
-		shoot = false;
 	}
 
 	void Update () {
@@ -45,7 +44,7 @@ public class PlayerControlScript : MonoBehaviour {
 				if (weapon != null && weapon.CanAttack)
 				{
 					weapon.Attack(false);
-					//SoundEffectsHelper.Instance.MakePlayerShotSound();
+					SoundHelperScript.Instance.MakePlayerShotSound();
 				
 				}
 			}

@@ -16,7 +16,6 @@ public class ShotScript : MonoBehaviour
 	{
 		// Зниження пулі після 2 секунд.
 		Destroy(gameObject, 2f); // 2sec
-
 	}
 
 	void OnCollisionEnter2D (Collision2D col)
@@ -27,14 +26,34 @@ public class ShotScript : MonoBehaviour
 			Destroy(col.gameObject);
 			GameManagerScript.score += 30;
 		}
+		if(col.gameObject.tag == "Player")
+		{
+			GameManagerScript.reload = true;
+			GameManagerScript.gameOver = true;
+			GameManagerScript.restart = true;
+			Destroy(col.gameObject);
+		}
+		if(col.gameObject.tag == "Shot")
+		{
+			Destroy(col.gameObject);
+		}
 	}
 
 	// Рух пулі.
 	void Update()
 	{
-		movement = new Vector3(
-			speed * 0,
-			5 * 1);
+		if (isEnemyShot)
+		{
+			movement = new Vector3(
+				speed * 0,
+				5 * -1);
+		}
+		else 
+		{
+			movement = new Vector3(
+				speed * 0,
+				5 * 1);
+		}
 	}
 	
 	void FixedUpdate()
