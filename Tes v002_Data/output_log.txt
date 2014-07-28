@@ -1,0 +1,23 @@
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [aticfx32.dll 9.18.10.1129]
+    Renderer: ATI Mobility Radeon HD 5000 Series (Microsoft Corporation - WDDM v1.20)
+    Vendor:   ATI
+    VRAM:     1015 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=1
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Games\Unity Games\Games\Test Invaders\Tes v002_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Games\Unity Games\Games\Test Invaders\Tes v002_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Games\Unity Games\Games\Test Invaders\Tes v002_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Games\Unity Games\Games\Test Invaders\Tes v002_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.073 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.624089 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 183.
+Total: 1.301167 ms (FindLiveObjects: 0.023097 ms CreateObjectMapping: 0.021738 ms MarkObjects: 0.234146 ms  DeleteObjects: 0.139944 ms)
+
