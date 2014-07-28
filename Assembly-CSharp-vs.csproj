@@ -46,13 +46,27 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Endless Level\EndlessEnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\Endless Level\SpawnEnemyScript1.cs" />
+     <Compile Include="Assets\Scripts\Endless Level\SpawnEnemyScript2.cs" />
+     <Compile Include="Assets\Scripts\Endless Level\SpawnEnemyScript3.cs" />
      <Compile Include="Assets\Scripts\GameManagerScript.cs" />
-     <Compile Include="Assets\Scripts\MoveScript.cs" />
+     <Compile Include="Assets\Scripts\Menu\EndlessEnemy1.cs" />
+     <Compile Include="Assets\Scripts\Menu\EndlessEnemy2.cs" />
+     <Compile Include="Assets\Scripts\Menu\EndlessEnemy3.cs" />
+     <Compile Include="Assets\Scripts\Menu\EndlessScript.cs" />
+     <Compile Include="Assets\Scripts\Menu\Exit.cs" />
+     <Compile Include="Assets\Scripts\Menu\NewGameScript.cs" />
+     <Compile Include="Assets\Scripts\MoveEnemy1Script.cs" />
+     <Compile Include="Assets\Scripts\MoveEnemy2Script.cs" />
+     <Compile Include="Assets\Scripts\MoveEnemy3Script.cs" />
+     <Compile Include="Assets\Scripts\PauseMenuScript.cs" />
      <Compile Include="Assets\Scripts\PlayerControlScript.cs" />
      <Compile Include="Assets\Scripts\ShotScript.cs" />
+     <Compile Include="Assets\Scripts\SoundHelperScript.cs" />
      <Compile Include="Assets\Scripts\SpawnEnemyScript.cs" />
-     <Compile Include="Assets\Scripts\TempPauseMenu.cs" />
-     <Compile Include="Assets\Scripts\TempTextAfterDeath.cs" />
+     <Compile Include="Assets\Scripts\SpecialEffectsHelper.cs" />
+     <Compile Include="Assets\Scripts\WeaponEnemyScript.cs" />
      <Compile Include="Assets\Scripts\WeaponScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
